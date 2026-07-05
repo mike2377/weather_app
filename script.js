@@ -1,4 +1,4 @@
-import { API_KEY } from './config.js';
+import { API_KEY } from './config.js'
 
 const cityInput = document.getElementById('city-input')
 const searchBtn = document.getElementById('search-btn')
