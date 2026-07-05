@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -36,7 +36,9 @@ body {
   background: linear-gradient(135deg, #232526, #414345);
 }
 
-.weather-mist, .weather-fog, .weather-haze {
+.weather-mist, 
+.weather-fog, 
+.weather-haze {
   background: linear-gradient(135deg, #606c88, #3f4c6b);
 }
 
@@ -48,6 +50,26 @@ body.weather-snow input {
   color: #333;
 }
 
+button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #ff7e5f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 6px rgba(0 0 0 / 10%);
+}
+
+button:hover {
+  background: #feb47b;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
 body.weather-snow button {
   background: #333;
   color: #fff;
@@ -56,7 +78,6 @@ body.weather-snow button {
 .container {
   background: rgba(255 255 255 / 15%);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 30px;
   width: 100%;
@@ -95,26 +116,6 @@ input[type="text"] {
 
 input[type="text"]::placeholder {
   color: #888;
-}
-
-button {
-  padding: 12px 20px;
-  border-radius: 25px;
-  border: none;
-  background: #ff7e5f;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-  box-shadow: 0 4px 6px rgba(0 0 0 / 10%);
-}
-
-button:hover {
-  background: #feb47b;
-}
-
-button:active {
-  transform: scale(0.98);
 }
 
 .toggle-units {
