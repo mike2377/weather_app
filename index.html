@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛅ Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="weather-default">
+    <div class="container">
+        <header>
+            <h1>⛅ Weather App</h1>
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="toggle-units">
+                <label><input type="radio" name="units" value="metric" checked> Celsius</label>
+                <label><input type="radio" name="units" value="imperial"> Fahrenheit</label>
+            </div>
+        </header>
+
+        <div id="error-message" class="hidden"></div>
+
+        <main id="weather-display" class="hidden">
+            <div class="current-weather">
+                <h2 id="city-name"></h2>
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <p id="weather-desc" class="desc"></p>
+                <h1 id="temperature"></h1>
+                <div class="details">
+                    <p>💧 Humidity: <span id="humidity"></span></p>
+                    <p>💨 Wind: <span id="wind"></span></p>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast-container"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
