@@ -36,8 +36,8 @@ body {
   background: linear-gradient(135deg, #232526, #414345);
 }
 
-.weather-mist, 
-.weather-fog, 
+.weather-mist,
+.weather-fog,
 .weather-haze {
   background: linear-gradient(135deg, #606c88, #3f4c6b);
 }
