@@ -140,3 +140,137 @@ input[type="text"]::placeholder {
   font-weight: bold;
   animation: shake 0.5s;
 }
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.current-weather {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.current-weather h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0 0 0 / 20%);
+}
+
+.current-weather img {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 4px 6px rgba(0 0 0 / 20%));
+}
+
+.current-weather .desc {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.current-weather h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+  font-weight: 700;
+  text-shadow: 0 4px 8px rgba(0 0 0 / 20%);
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.forecast h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 4px rgba(0 0 0 / 20%);
+}
+
+#forecast-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255 255 255 / 50%) transparent;
+}
+
+#forecast-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+#forecast-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#forecast-container::-webkit-scrollbar-thumb {
+  background: rgba(255 255 255 / 50%);
+  border-radius: 10px;
+}
+
+.forecast-day {
+  background: rgba(255 255 255 / 20%);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  min-width: 110px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255 255 255 / 10%);
+}
+
+.forecast-day img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-day p {
+  margin: 5px 0;
+}
+
+.forecast-day strong {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .current-weather h1 {
+    font-size: 3rem;
+  }
+
+  .current-weather img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
