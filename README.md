@@ -253,14 +253,6 @@ No build tools, no dependencies — just open and go!
 
 ---
 
-## 🚀 Future Improvements
-
-- Add autocomplete suggestions for city names
-- Integrate geolocation API for automatic location detection
-- Implement dark/light theme toggle
-
----
-
 ## 👨🏽‍💻 Author
 
 **Kembou Keumoe Ivan Michael**
@@ -269,11 +261,3 @@ Junior Fullstack Developer
 📩 Email: <kman39457@email.com>
 
 🌍 Based in Cameroon | Open to remote opportunities
-
----
-
-## 🙏 Acknowledgments
-
-- [OpenWeatherMap](https://openweathermap.org/) for providing the free weather API
-- Font Awesome for the icons used in the UI
-- All contributors and testers who helped improve this application

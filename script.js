@@ -1,5 +1,3 @@
-// import { API_KEY } from './config.js'
-
 // Key in plaintext because the project does not use a server.
 const API_KEY = '82f1bb21a99b19d84549fea528515704' // gitleaks:allow
 
