@@ -68,7 +68,7 @@ This project aims to:
 ### 🌡️ Temperature Unit Toggle
 
 - Switch between Celsius and Fahrenheit
-- Updates all temperatures instantly
+- Updates all temperatures
 
 ---
 
@@ -89,41 +89,9 @@ This project aims to:
 
 - CSS Gradients
 - Flexbox
-- Backdrop Filter (Glassmorphism)
+- Backdrop Filter
 - CSS Transitions & Animations
 - Media Queries
-
-### JavaScript Features
-
-- ES6 Modules (import/export)
-- Async/Await with Fetch API
-- Local Storage API
-- DOM Manipulation
-- Event Listeners
-
----
-
-## 🖥️ Features Overview
-
-### 🌐 Core Features
-
-- ✅ City search with Enter key support
-- ✅ Current weather display
-- ✅ 5-day forecast
-- ✅ Temperature unit toggle (°C/°F)
-- ✅ Local Storage persistence
-- ✅ Error handling with user-friendly messages
-- ✅ Weather-based dynamic backgrounds
-- ✅ Responsive design (mobile-first)
-
-### 🎨 UI/UX Features
-
-- Glassmorphism card design
-- Smooth background transitions
-- Weather icons from OpenWeatherMap
-- Hover and active states on buttons
-- Scrollable forecast container
-- Animated error messages
 
 ---
 
@@ -141,8 +109,7 @@ This project aims to:
 
 | Breakpoint | Target Device |
 | ≤ 600px | Mobile phones |
-| 601px - 768px | Tablets |
-| ≥ 769px | Desktops |
+| ≥ 600px | Tablets, Desktops |
 
 ---
 
@@ -175,7 +142,6 @@ weather-app/
 │   └── images
 │       ├── iPhone-13-PRO-127.0.0.1 (1).png
 │       └── Macbook-Air-127.0.0.1.png
-├── config.js
 ├── index.html
 ├── README.md
 ├── script.js
@@ -185,13 +151,6 @@ weather-app/
 ---
 
 ## 🚀 Getting Started
-
-### Prerequisites
-
-- OpenWeatherMap API key (free sign-up required)
-- Modern web browser (Chrome, Firefox, Edge)
-
-### Installation
 
 1. **Clone the repository:**
 
@@ -205,14 +164,6 @@ cd weather-app
    - Sign up for a free account
    - Copy your API key from the dashboard
 
-1. **Configure the API Key:**
-   - Open `config.js`
-   - Replace the existing key with your own:
-
-```javascript
-export const API_KEY = "YOUR_API_KEY_HERE";
-```
-
 1. **Run the application:**
    - Simply open `index.html` in any browser
    - Or use a live server extension in VS Code
@@ -225,25 +176,21 @@ Right-click index.html → Open with Live Server
 open index.html
 ```
 
-No build tools, no dependencies — just open and go!
-
 ---
 
 ## 🧠 Challenges Faced
 
-- **CORS Issues:** Resolved by using proper API endpoints and handling fetch errors
 - **Local Storage Persistence:** Implemented save/load functionality for last searched city
 - **5-Day Forecast Filtering:** Filtered API data to show one forecast per day
 - **Dynamic Backgrounds:** Mapped weather conditions to gradient backgrounds
 - **Unit Toggling:** Ensured all temperature and wind speed units update correctly
-- **Responsive Design:** Made layout work seamlessly across all screen sizes
+- **API key**: I originally tried using a separate config.js file with Vercel environment variables, but the API calls weren't working. Since this is a frontend-only project with no backend, I hardcoded the key in script.js to get it working. Not ideal for production, but unavoidable without a server-side proxy.
 
 ---
 
 ## 📚 What I Learned
 
 - Working with external APIs using `fetch()` and `async/await`
-- Managing API keys securely in a separate config file
 - Implementing Local Storage for data persistence
 - Handle API errors and provide user feedback
 - Create dynamic UI updates based on data
