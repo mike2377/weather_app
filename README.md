@@ -1,4 +1,4 @@
-# 🌤️ Weather App — JavaScript Weather Forecast Application
+# 🌤️ Weather App - JavaScript Weather Forecast Application
 
 A fully functional weather forecast application built with JavaScript, HTML, and CSS. Users can search for any city worldwide and get real-time weather data including temperature, humidity, wind speed, and a 5-day forecast using the OpenWeatherMap API.
 
@@ -196,7 +196,6 @@ open index.html
 - Create dynamic UI updates based on data
 - Build a responsive single-page
 - Use ES6 modules
-- Implementing glassmorphism design with CSS
 
 ---
 
